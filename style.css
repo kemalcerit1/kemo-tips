@@ -383,3 +383,11 @@ body {
 .btn-telegram:hover {
     background: #0077b3 !important;
 }
+/* Takım Minimal Logoları */
+.team-logo {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 8px; /* Yazıyla logo arasındaki şık boşluk */
+    letter-spacing: -2px; /* Renklerin birbirine yapışık, modern durması için */
+    vertical-align: middle;
+}
