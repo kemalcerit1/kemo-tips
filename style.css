@@ -634,3 +634,95 @@ body {
     color: #64748b;
     font-size: 13px;
 }
+/* --- DÜNYA KUPASI GÜNCEL EXTRA STİLLER --- */
+
+/* Türkiye'nin grubunu hafifçe parlatıp öne çıkaralım */
+.highlighted-group {
+    border: 1px solid #ef4444 !important;
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.08) !important;
+}
+.font-bold-team {
+    font-weight: 700;
+    color: #ef4444 !important;
+}
+
+/* Fikstür Kaydırma Kutusu */
+.fixtures-scrollbar-container {
+    display: flex;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 10px 10px 20px 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fikstür Kartı */
+.fixture-card {
+    flex: 0 0 310px;
+    scroll-snap-align: start;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01);
+    position: relative;
+}
+
+/* Rozetler */
+.match-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+.match-opening {
+    border: 1px solid #10b981;
+}
+.match-opening .match-badge {
+    background: #e6f4ea;
+    color: #10b981;
+}
+.match-turkey {
+    border: 1px solid #ef4444;
+    background: #fffbfa;
+}
+.red-badge {
+    background: #fef2f2;
+    color: #ef4444;
+}
+.grey-badge {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+/* Takımlar Alanı */
+.match-teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.m-team {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+.m-vs {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Saat/Tarih Bilgisi */
+.match-info {
+    font-size: 13px;
+    color: #64748b;
+}
