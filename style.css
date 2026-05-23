@@ -483,3 +483,71 @@ body {
     padding: 14px 12px !important;
     border-bottom: 1px solid #f1f5f9;
 }
+/* --- İSTATİSTİKLER SEZON ARASI ÖZEL TASARIMI --- */
+.stats-cooldown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+.cooldown-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 50px 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.cooldown-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.cooldown-card h2 {
+    font-size: 28px;
+    color: #0f172a;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.cooldown-card .divider {
+    width: 60px;
+    height: 4px;
+    background: #0284c7; /* Şık bir mavi çizgi */
+    margin: 0 auto 25px auto;
+    border-radius: 2px;
+}
+
+.main-text {
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.sub-text {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.badge-next-season {
+    display: inline-block;
+    background: #0f172a;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 10px 24px;
+    border-radius: 100px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
