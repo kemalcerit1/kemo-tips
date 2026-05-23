@@ -368,3 +368,18 @@ body {
 .btn-social:hover {
     background: #0284c7;
 }
+/* İletişim İki Kutu Düzeni */
+.social-channels-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* İki kutu arasındaki boşluk */
+}
+
+/* Telegram Buton Özelleştirmesi */
+.btn-telegram {
+    background: #0088cc !important; /* Telegram Mavisi */
+}
+
+.btn-telegram:hover {
+    background: #0077b3 !important;
+}
