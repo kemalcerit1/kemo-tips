@@ -551,3 +551,86 @@ body {
     border-radius: 100px;
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
 }
+/* --- WORLD CUP 2026 SAYFASI ÖZEL TASARIMI --- */
+.wc-container {
+    margin-top: 40px;
+    padding: 0 20px 60px 20px;
+}
+
+/* İşte Kaydırmayı Sağlayan Sihirli Alan */
+.groups-scrollbar-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 10px 10px 25px 10px;
+    
+    /* Yatayda kaydırmayı aktif eden kodlar */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Mobilde yağ gibi akması için */
+}
+
+/* Şık İnce Scrollbar Tasarımı (Windows için görünüm düzeltsin) */
+.groups-scrollbar-container::-webkit-scrollbar {
+    height: 8px;
+}
+.groups-scrollbar-container::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+.groups-scrollbar-container::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+.groups-scrollbar-container::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Grup Kartları */
+.group-card {
+    flex: 0 0 280px; /* Kartların genişliği sabit kalsın, küçülmesin */
+    scroll-snap-align: start;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.group-header {
+    background: #0f172a; /* Dünya Kupasına yakışan asil koyu lacivert */
+    color: #ffffff;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.group-teams {
+    padding: 15px;
+}
+
+.group-team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+}
+
+.group-team-row:last-child {
+    border-bottom: none;
+}
+
+.group-team-row span {
+    font-weight: 500;
+}
+
+.group-team-row strong {
+    color: #64748b;
+    font-size: 13px;
+}
