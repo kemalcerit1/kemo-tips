@@ -756,3 +756,110 @@ body {
     align-items: center;
     gap: 6px;
 }
+/* ==========================================================================
+   📱 KEMOTIPS MOBIL UYUMLULUK (MEDIA QUERY)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    
+    /* 1. Üst Menü (Navbar) Mobil Düzeni */
+    .navbar {
+        flex-direction: column; /* Logo ve menüyü alt alta al */
+        gap: 15px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap; /* Linkler sığmazsa alt satıra geçsin */
+        justify-content: center;
+        gap: 10px 15px;
+        font-size: 13px; /* Mobilde yazıları hafif küçült */
+    }
+
+    /* 2. Ana Sayfa (Hero Bölümü) Mobil Düzeni */
+    .hero-container {
+        flex-direction: column-reverse; /* Mobilde önce resmi, sonra butonları göster */
+        margin-top: 20px;
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .hero-left, .hero-right {
+        width: 100% !important; /* İki tarafı da tam genişlik yap */
+        text-align: center;
+    }
+
+    .button-group {
+        flex-direction: column; /* Butonları alt alta diz */
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%; /* Butonlar ekranı kaplasın, basması kolay olsun */
+        justify-content: center;
+    }
+
+    .image-wrapper img {
+        max-height: 250px; /* Mobilde devasa resmi biraz törpüle */
+        object-fit: cover;
+    }
+
+    /* 3. Günlük Kuponlar Sayfası Mobil Düzeni */
+    .kuponlar-container {
+        padding: 0 15px 40px 15px;
+    }
+
+    .kupon-grid {
+        grid-template-columns: 1fr !important; /* Kupon kartlarını yan yana değil tekli alt alta diz */
+        gap: 20px;
+    }
+
+    .kupon-card {
+        padding: 20px 15px; /* İç boşlukları daralt ki ekrana sığsın */
+    }
+
+    /* 4. Dünya Kupası (WC 2026) Sayfası Mobil Düzeni */
+    .wc-container {
+        padding: 0 10px 40px 10px;
+    }
+    
+    .groups-scrollbar-container, .fixtures-scrollbar-container {
+        margin: 20px 0;
+        padding-left: 10px; /* Kenardan hafif taşma hissi ver ki kaydırılacağı anlaşılsın */
+    }
+
+    .group-card {
+        flex: 0 0 250px; /* Mobilde kartları biraz daha daraltarak ekrana sığdır */
+    }
+
+    .fixture-card {
+        flex: 0 0 280px;
+    }
+
+    /* 5. İletişim Sayfası Mobil Düzeni */
+    .iletisim-container {
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+
+    .iletisim-card {
+        padding: 30px 20px;
+    }
+
+    .social-box {
+        flex-direction: column; /* X ve Telegram kutularındaki butonları alt alta al */
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-details {
+        margin-bottom: 5px;
+    }
+
+    .btn-social {
+        width: 100%;
+        text-align: center;
+    }
+}
