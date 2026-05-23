@@ -391,3 +391,66 @@ body {
     letter-spacing: -2px; /* Renklerin birbirine yapışık, modern durması için */
     vertical-align: middle;
 }
+/* --- Gelişmiş Premium Tablo Stili --- */
+.istatistikler-container {
+    margin-top: 40px;
+    padding: 0 40px 60px 40px;
+}
+
+.tablo-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e2e8f0;
+}
+
+.puan-durumu-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    color: #334155;
+}
+
+/* Tablo Başlık Alanı Genişletildi */
+.puan-durumu-table th {
+    background: #f8fafc;
+    color: #1e293b;
+    font-weight: 700;
+    padding: 16px 15px;
+    border-bottom: 2px solid #edf2f7;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Satırların Arasındaki Çizgiler ve Boşluklar */
+.puan-durumu-table td {
+    padding: 16px 15px;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.15s ease;
+}
+
+.text-left { text-align: left; }
+.font-bold { font-weight: 700; color: #0f172a !important; }
+
+/* Satırın Üzerine Gelince Şık Parlama */
+.puan-durumu-table tbody tr:hover {
+    background-color: #f1f5f9 !important;
+}
+
+/* Çorum FK satırına özel hafif gri vurgu */
+.corum-row {
+    background-color: #fafafa;
+}
+
+/* Sol Taraftaki Çizgi Renkleri */
+.sampiyonlar-ligi td:first-child { border-left: 5px solid #2563eb; background: #f0f5ff; }
+.sampiyonlar-ligi-elemeleri td:first-child { border-left: 5px solid #3b82f6; background: #f4f8ff; }
+.avrupa-ligi td:first-child { border-left: 5px solid #10b981; background: #f0fdf4; }
+.konferans-ligi td:first-child { border-left: 5px solid #34d399; background: #f0fdfa; }
+
+/* Küme düşme alanı arka planı da hafif kırmızımsı */
+.kume-dusme td:first-child { border-left: 5px solid #ef4444; background: #fef2f2; }
